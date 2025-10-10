@@ -1,0 +1,124 @@
+/**
+ * RESPONSIVE NAVIGATION BAR STYLESHEET
+ * 
+ * This stylesheet creates a responsive navigation bar that adapts to different screen sizes.
+ * 
+ * FONTS:
+ * - Primary: Ubuntu (sans-serif)
+ * - Imported from Google Fonts
+ * 
+ * LAYOUT STRUCTURE:
+ * - .navbar: Main navigation container with flexbox layout
+ * - .left: Contains the logo/heading
+ * - .right: Contains navigation menu items
+ * 
+ * FEATURES:
+ * - Mobile-responsive design with hamburger menu
+ * - Smooth transitions for menu animations
+ * - Hover effects on navigation links
+ * - Hidden checkbox mechanism for toggle functionality
+ * 
+ * COLOR SCHEME:
+ * - Primary background: rgb(22, 7, 36) - Dark purple
+ * - Accent color: #ed1e79 - Pink (for checkbox button)
+ * - Text color: #fff - White
+ * 
+ * RESPONSIVE BREAKPOINTS:
+ * - Desktop: Default layout with horizontal menu
+ * - Mobile (max-width: 805px): Vertical slide-in menu from right
+ * 
+ * INTERACTIVE ELEMENTS:
+ * - Checkbox toggle (#check) controls mobile menu visibility
+ * - .checkBtn displays hamburger icon on mobile devices
+ * - Menu slides from right (left: 100%) to left (left: 0%) when activated
+ * 
+ * TRANSITIONS:
+ * - Navigation links: 1s transition on hover
+ * - Mobile menu: 1s slide transition
+ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(22, 7, 36);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 5rem;
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #ed1e79;
+    line-height: 80px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li a {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.right ul li a:hover {
+    background-color: #fff;
+    border-radius: 7px;
+    color: rgb(22, 7, 36);
+}
+
+@media screen and (max-width:805px) {
+    .list {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: 100%;
+        transition: all 1s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+}
