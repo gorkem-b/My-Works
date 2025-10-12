@@ -1,0 +1,87 @@
+<!--
+    Pricing Card Component
+    
+    Description:
+        A responsive pricing page displaying three hosting plan tiers (Personal, Premium, Ultimate).
+        Each pricing card includes plan name, monthly price, feature list, and call-to-action button.
+    
+    Structure:
+        - <main>: Container for the entire pricing section
+            - <h1>: Main heading "Pricing"
+            - <div class="pricing-container">: Flex/grid container for pricing cards
+                - <article class="pricing-item">: Individual pricing card (x3)
+                    - <h2 class="pricing-kit">: Plan name
+                    - <p class="pricing">: Price display with currency, amount, and period spans
+                    - <ul class="offers">: Feature list
+                    - <button class="order-btn">: Call-to-action button with aria-label
+    
+    Pricing Tiers:
+        1. Personal: $15/mo - 2 websites, 30GB SSD, 1 Domain, 1 Email, 1x CPU & RAM
+        2. Premium: $30/mo - 50 websites, 60GB SSD, 5 Domains, 20 Emails, 2x CPU & RAM
+        3. Ultimate: $100/mo - 100 websites, 200GB SSD, 10 Domains, 10 Emails, 4x CPU & RAM
+    
+    Accessibility:
+        - Semantic HTML5 elements (article, main)
+        - aria-label attributes on buttons for screen readers
+        - Proper heading hierarchy (h1, h2)
+    
+    Dependencies:
+        - style.css: External stylesheet for layout and styling
+    
+    Viewport:
+        - Responsive meta viewport tag configured for mobile-first design
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="price-heading">Pricing</h1>
+        <div class="pricing-container">
+            <article class="pricing-item">
+                <h2 class="pricing-kit">Personal</h2>
+                <p class="pricing"><span class="currency">$</span><span class="amount">15</span><span class="period">/mo</span></p>
+                <ul class="offers">
+                    <li>2 websites</li>
+                    <li>30GB SSD</li>
+                    <li>1 Domain</li>
+                    <li>1 Email</li>
+                    <li>1x CPU & RAM</li>
+                </ul>
+                <button class="order-btn" aria-label="Order Personal plan">Order Now</button>
+            </article>
+            <article class="pricing-item">
+                <h2 class="pricing-kit">Premium</h2>
+                <p class="pricing"><span class="currency">$</span><span class="amount">30</span><span class="period">/mo</span></p>
+                <ul class="offers">
+                    <li>50 websites</li>
+                    <li>60GB SSD</li>
+                    <li>5 Domains</li>
+                    <li>20 Emails</li>
+                    <li>2x CPU & RAM</li>
+                </ul>
+                <button class="order-btn" aria-label="Order Premium plan">Order Now</button>
+            </article>
+            <article class="pricing-item">
+                <h2 class="pricing-kit">Ultimate</h2>
+                <p class="pricing"><span class="currency">$</span><span class="amount">100</span><span class="period">/mo</span></p>
+                <ul class="offers">
+                    <li>100 websites</li>
+                    <li>200GB SSD</li>
+                    <li>10 Domains</li>
+                    <li>10 Emails</li>
+                    <li>4x CPU & RAM</li>
+                </ul>
+                <button class="order-btn" aria-label="Order Ultimate plan">Order Now</button>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
