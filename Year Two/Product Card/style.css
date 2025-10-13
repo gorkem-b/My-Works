@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Ubuntu&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(200, 142, 254);
+}
+
+/* Item Container */
+.item-container {
+    background-color: #fff;
+    width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Section */
+.item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left-logo {
+    width: 60px;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-left-logo img {
+    width: 100%;
+}
+
+.top-right-cart {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+
+/* Item Content */
+.main-item {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.item-heading {
+    text-transform: capitalize;
+}
+
+.item-description {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.item-price {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.item-price sup {
+    color: green;
+}
+
+/* Rating */
+.rating i {
+    color: rgb(200, 142, 254);
+    margin-bottom: 1rem;
+}
+
+/* Cart Button */
+.item-cart-btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #fff;
+    background-color: rgb(200, 142, 254);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.item-cart-btn:hover {
+    background-color: rgb(160, 110, 206);
+}
