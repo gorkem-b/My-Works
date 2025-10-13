@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* ===== Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(33, 31, 31);
+}
+
+/* ===== Layout ===== */
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    padding: 1rem 4rem;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(12, 252, 24);
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(32, 236, 42);
+}
+
+/* ===== Popup ===== */
+.popupContainer {
+    position: absolute;
+    top: -10%;
+    width: 20rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: all 0.4s linear;
+}
+
+.popupActive {
+    top: 30%;
+    visibility: visible;
+    transform: scale(1.1);
+}
+
+.popupContainer h2,
+.popupContainer p {
+    text-align: center;
+}
+
+/* ===== Close Button ===== */
+#close {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(77, 0, 0);
+    background-color: rgb(245, 73, 73);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#close:hover {
+    color: rgb(245, 73, 73);
+    background-color: rgb(234, 183, 183);
+}
+
+/* ===== Image ===== */
+#image {
+    position: relative;
+    top: -4rem;
+    width: 5rem;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(236, 225, 66);
+    border-radius: 50%;
+}
