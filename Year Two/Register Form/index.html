@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="contact-section">
+        <h2 class="heading">Contact Us</h2>
+        
+        <form>
+            <!-- Contact Form Fields -->
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="tel" name="phone" id="phone" placeholder="Phone">
+            
+            <!-- Communication Method -->
+            <div class="communication-method">
+                <p>Preferred method of communication</p>
+                <label>
+                    <input type="radio" name="method" value="email"> Email
+                </label>
+                <label>
+                    <input type="radio" name="method" value="phone"> Phone
+                </label>
+            </div>
+            
+            <!-- Message -->
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            
+            <!-- Submit Button -->
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
