@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery Expanding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="images">
+            <div class="image-item">
+                <h2>William</h2>
+            </div>
+            <div class="image-item">
+                <h2>John Doe</h2>
+            </div>
+            <div class="image-item">
+                <h2>Bill Gloks</h2>
+            </div>
+            <div class="image-item">
+                <h2>Andrerw</h2>
+            </div>
+            <div class="image-item">
+                <h2>Jakson</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Expand/collapse images on click
+        const items = document.querySelectorAll('.image-item');
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                items.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
