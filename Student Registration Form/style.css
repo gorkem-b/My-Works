@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Layout */
+body {
+    width: 100%;
+    background-color: rgb(34, 232, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.registration-container {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Headings */
+.registration-container h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.registration-container h2::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 20%;
+    height: 3px;
+    background-color: #e65b00;
+    border-radius: 2px;
+}
+
+/* Form Sections */
+.three-details-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal-details,
+.identity-details {
+    margin: 0.2rem 0;
+}
+
+/* Labels */
+.personal-details label,
+.identity-details label {
+    margin: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Inputs */
+.three-details-item input {
+    padding: 0.1rem;
+    font-size: 0.8rem;
+    background-color: transparent;
+    border: 1px solid rgb(113, 101, 101);
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+/* Divider */
+hr {
+    width: 70%;
+    height: 1px;
+    margin: 1rem 0;
+    background-color: #d2d2d2;
+    border: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: block;
+    width: 50%;
+    margin: 0.6rem auto;
+    padding: 0.3rem 1rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #e65b00;
+    border: none;
+    border-radius: 2rem;
+}

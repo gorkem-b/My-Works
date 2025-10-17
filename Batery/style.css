@@ -1,0 +1,78 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    background-color: black;
+}
+
+/* Outer container */
+.container {
+    padding: 10px;
+}
+
+/* Main battery container */
+.main-container {
+    padding: 6px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Battery body */
+.battery {
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+/* Battery fill (percentage) */
+#batter-per {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Adjust this for battery level */
+    height: 100%;
+    background-color: rgb(8, 198, 11);
+    border-radius: 10px;
+    animation: battery 2s 1;
+}
+
+/* Battery fill animation */
+@keyframes battery {
+    from { width: 0%; }
+    to   { width: 100%; }
+}
+
+/* Battery percentage/status text */
+#batteryStatus {
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    z-index: 20;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #e65b00;
+    text-shadow: 2px 2px black;
+}
+
+/* Battery terminal */
+.sub-container {
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+}

@@ -1,0 +1,384 @@
+/* =================== Imports =================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+/* =================== Reset & Base =================== */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* =================== Navbar =================== */
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    line-height: 4rem;
+}
+
+.left h1 {
+    color: #f53117;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.checkBtn {
+    color: #f53117;
+    cursor: pointer;
+    display: none;
+    float: right;
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 6;
+}
+
+#check {
+    display: none;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li a {
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.right ul li a:hover {
+    background-color: #fff;
+    border-radius: 7px;
+    color: rgb(22, 7, 36);
+}
+
+/* =================== Home Section =================== */
+#home {
+    align-items: center;
+    background-color: rgb(235, 232, 229);
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-left .col-red {
+    margin-bottom: 10px;
+}
+
+.home-left .col-red p {
+    background: #edcbc1;
+    border-radius: 9px;
+    color: rgb(245, 49, 23);
+    display: inline;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.home-left h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.home-left p {
+    margin-bottom: 10px;
+}
+
+.home-right {
+    background-color: rgb(245, 49, 23);
+    border-bottom-left-radius: 130px;
+    border-top-right-radius: 130px;
+    box-shadow: 0px 0px 12px 0px rgb(47 53 79);
+    cursor: pointer;
+    height: 300px;
+    transition: all .5s ease-in;
+    width: 300px;
+}
+
+.home-right:hover {
+    transform: translateY(-12px);
+}
+
+.home-right img {
+    left: 67px;
+    position: relative;
+    bottom: 16px;
+    width: 158px;
+    z-index: 1;
+}
+
+.bg-red-btn {
+    background: rgb(245, 49, 23);
+    border: 1px solid rgb(245, 49, 23);
+    border-radius: 15rem;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 8px;
+    width: 124px;
+}
+
+.bg-red-btn:hover {
+    background: transparent;
+    border: 1px solid rgb(245, 49, 23);
+    color: rgb(245, 49, 23);
+    margin-top: 10px;
+    padding: 8px;
+}
+
+/* =================== Delivery Partner Section =================== */
+#delivery-partner {
+    background-color: #fff;
+    color: #000;
+    height: auto;
+    padding: 20px;
+}
+
+#delivery-partner h4,
+#delivery-partner h1 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.partners {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partner {
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px -1px black;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    padding: 9px;
+    text-align: center;
+    transition: all .5s ease-in;
+    width: 300px;
+}
+
+.partner:hover {
+    transform: translateY(-12px);
+}
+
+.partner img {
+    width: 100px;
+}
+
+.partners .left img {
+    width: 70px;
+}
+
+/* =================== Chef Main Section =================== */
+#chef-main {
+    background-color: #fff;
+    color: #000;
+    height: auto;
+    padding: 20px;
+}
+
+#chef-main h4,
+#chef-main h1 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h4 {
+    color: rgb(245, 49, 23);
+    font-weight: bold;
+}
+
+.chefs {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chef-item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    padding: 9px;
+    text-align: center;
+    transition: all .3s ease-in;
+}
+
+.chef-item:hover {
+    transform: scale(1.1);
+}
+
+.chef-item img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px -1px black;
+    width: 250px;
+}
+
+/* =================== Contact Section =================== */
+#contact {
+    background-color: #fff;
+    color: black;
+    padding: 25px;
+}
+
+#contact h4,
+#contact h1 {
+    text-align: center;
+}
+
+.main-form {
+    display: block;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    width: 355px;
+}
+
+.main-form input,
+textarea {
+    background: #ede0e8;
+    border: none;
+    border-radius: 9px;
+    display: block;
+    margin: 10px auto;
+    padding: 7px;
+    width: 90%;
+}
+
+.main-form button {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+/* =================== Footer =================== */
+footer {
+    background-color: rgb(227, 240, 240);
+    color: #000;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* =================== Media Queries =================== */
+@media screen and (max-width:805px) {
+    .list {
+        background-color: rgb(22, 7, 36);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        left: 100%;
+        position: fixed;
+        text-align: center;
+        transition: all 1s;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .right ul li a {
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: all 1s;
+    }
+
+    .right ul li a:hover {
+        background-color: #fff;
+        border-radius: 7px;
+        color: rgb(22, 7, 36);
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        display: flex;
+        justify-content: center;
+        left: 0%;
+        top: 0%;
+    }
+}
+
+@media only screen and (max-width: 717px) {
+    .header {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 669px) {
+    #home {
+        flex-direction: column;
+    }
+
+    .home-left h1 {
+        font-size: 30px;
+    }
+
+    .home-left p {
+        font-size: 13.7px;
+    }
+
+    .home-right {
+        margin-top: 20px;
+        width: 280px;
+    }
+
+    .bg-red-btn {
+        font-size: 10px;
+        margin-top: 0px;
+        width: 85px;
+    }
+
+    #delivery-partner {
+        height: auto;
+        padding: 1px;
+        width: 100%;
+    }
+
+    #contact h4,
+    #contact h1 {
+        font-size: 20px;
+    }
+
+    #chef-main {
+        height: auto;
+    }
+
+    .chef-item img {
+        height: auto;
+        width: 95%;
+    }
+
+    .main-form {
+        height: auto;
+        width: 100%;
+    }
+}

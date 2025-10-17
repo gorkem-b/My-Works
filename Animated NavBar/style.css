@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(254, 254, 254);
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 4rem;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(26, 25, 25);
+}
+
+.navbar h2 {
+    color: white;
+}
+
+/* Navigation Menu */
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+/* Links */
+ul li a {
+    position: relative;
+    padding: 5px 1rem;
+    margin: 0 10px;
+    color: rgb(232, 228, 102);
+    text-decoration: none;
+}
+
+/* Animated Border - Top Left */
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid rgb(232, 228, 102);
+    border-left: 2px solid rgb(232, 228, 102);
+    transition: all 0.4s;
+}
+
+/* Animated Border - Bottom Right */
+ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgb(232, 228, 102);
+    border-right: 2px solid rgb(232, 228, 102);
+    transition: all 0.4s;
+}
+
+/* Hover Effect */
+ul li a:hover::before,
+ul li a:hover::after {
+    width: 10%;
+    height: 20%;
+    transform: rotate(360deg);
+}

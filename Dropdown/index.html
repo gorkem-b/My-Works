@@ -5,50 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Custom Dropdown Menu</title>
 </head>
 
 <body>
-    <div class="menu">
-        <div class="select-btn">
-            <span class="chooseText">Choose an option</span>
-            <div class="arrow"></div>
+    <div class="navbar">
+        <div class="nav-left">
+            <h2>Welcome!</h2>
         </div>
 
-        <ul class="options">
-            <li class="option html">
-                <i class="fa-brands fa-html5"></i>
-                <span class="option-text">HTML Simplified PDF</span>
-            </li>
-            <li class="option css">
-                <i class="fa-brands fa-css3-alt"></i>
-                <span class="option-text">CSS Master PDF</span>
-            </li>
-            <li class="option js">
-                <i class="fa-brands fa-js"></i>
-                <span class="option-text">JavaScript Doctory PDF</span>
-            </li>
-            <li class="option react">
-                <i class="fa-brands fa-react"></i>
-                <span class="option-text">ReactJS CheatSheet</span>
-            </li>
-        </ul>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li class="services" id="dropdown">
+                    <a href="#services">
+                        Services <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="toggle">
+                        <li><a href="#">Content Writing</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">YouTube Management</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
     </div>
 
-    <script>
-        // Dropdown toggle functionality
-        const selectMenu = document.querySelector(".menu");
-        const selectBtn = selectMenu.querySelector(".select-btn");
-
-        selectBtn.addEventListener("click", () => {
-            selectMenu.classList.toggle("active");
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

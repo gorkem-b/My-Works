@@ -1,0 +1,97 @@
+/**
+ * CONTACT FORM STYLESHEET
+ * 
+ * This stylesheet provides styling for a centered contact form with a modern design.
+ * 
+ * @author Görkem
+ * @filepath /C:/Users/Görkem/OneDrive/Belgeler/Contact Form/style.css
+ * 
+ * STRUCTURE:
+ * - Universal reset and font import (Poppins from Google Fonts)
+ * - Container: Full viewport height flex container with pink background
+ * - Form: White card-style form with rounded corners
+ * - Form inputs: Styled input and textarea fields with gray background
+ * - Form button: Pink-bordered button with hover effects
+ * 
+ * COLOR SCHEME:
+ * - Primary background: #eecbed (light pink)
+ * - Form background: white
+ * - Input background: #f5f5f5 (light gray)
+ * - Accent color: pink
+ * 
+ * RESPONSIVE DESIGN:
+ * - Form uses viewport width (vw) for padding
+ * - Max-width constraint of 600px for larger screens
+ * - Form width set to 60% of container
+ * 
+ * FEATURES:
+ * - Smooth transitions on button hover (0.5s ease-in)
+ * - Rounded corners throughout (border-radius: 10px, 30px for button)
+ * - Centered layout using flexbox
+ * - No default margins/padding/borders on inputs
+ * - Textarea resize disabled
+ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: #eecbed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 60%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form h2 {
+  text-align: center;
+  color: pink;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0px;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  border-radius: 10px;
+  resize: none;
+}
+
+form button {
+  background: white;
+  color: pink;
+  border: 1px solid pink;
+  padding: 15px;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  transition: all .5s ease-in;
+}
+
+form button:hover {
+  border: 1px solid pink;
+  background: pink;
+  color: white;
+}
