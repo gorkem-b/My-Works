@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(19, 29, 59);
+}
+
+/* Grid container for user cards */
+.userCard {
+    position: relative;
+    height: 100vh;
+    padding: 30px 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 300px);
+    row-gap: 20px;
+}
+
+/* Card styles */
+.card {
+    background-color: rgb(19, 29, 59);
+    color: #fff;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Card hover effect */
+.card:hover {
+    background-color: rgb(20, 27, 49);
+    transform: translateY(-6px);
+}
+
+/* Moving element inside card */
+.moving {
+    display: inline-flex;
+    position: relative;
+    opacity: 0.4;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 3rem;
+    transform: translateX(100px);
+    transition: all 0.7s;
+}
+
+/* Icon inside moving element */
+.moving i {
+    display: none;
+    font-size: 3rem;
+    margin-right: 15px;
+}
+
+/* Show moving element and icon on card hover */
+.card:hover .moving,
+.card:hover .moving i {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0) rotate(360deg);
+}
+
+/* Social media color highlights on hover */
+.card:hover .instagram,
+.insta {
+    color: palevioletred;
+}
+
+.card:hover .youtube,
+.yt {
+    color: #ff0000;
+}
+
+.card:hover .twitter,
+.tw {
+    color: #1d9bf0;
+}
+
+.card:hover .facebook,
+.fb {
+    color: #1198f6;
+}
+
+/* Card content spacing */
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-weight: 100;
+}
