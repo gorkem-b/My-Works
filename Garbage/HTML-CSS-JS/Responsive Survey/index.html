@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>GSurvey Form</h2>
+        <div class="form-wrapper">
+            <form>
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group gender">
+                    <span>Gender:</span>
+                    <div class="genderDiv">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <!-- Source -->
+                <div class="form-group">
+                    <label for="hear">Where did you hear about Survey?</label>
+                    <select id="hear" name="hear">
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="friends">Friends</option>
+                        <option value="googleSearch">Google Search</option>
+                        <option value="Randomly">Randomly</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Recommendation -->
+                <div class="form-group flex">
+                    <label>Will you recommend Survey to your friends?</label>
+                    <div class="recommendation">
+                        <input type="radio" name="recommend" id="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="recommend" id="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <!-- Favorite Language -->
+                <div class="form-group">
+                    <label>Favorite Language</label>
+                    <div class="box">
+                        <input type="checkbox" name="lang" id="html" value="HTML">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" name="lang" id="css" value="CSS">
+                        <label for="css">CSS</label>
+                        <input type="checkbox" name="lang" id="javascript" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                        <input type="checkbox" name="lang" id="python" value="Python">
+                        <label for="python">Python</label>
+                        <input type="checkbox" name="lang" id="java" value="Java">
+                        <label for="java">Java</label>
+                        <input type="checkbox" name="lang" id="c_cpp" value="C/C++">
+                        <label for="c_cpp">C/C++</label>
+                        <input type="checkbox" name="lang" id="nodejs" value="NodeJS">
+                        <label for="nodejs">NodeJS</label>
+                    </div>
+                </div>
+
+                <!-- Suggestions -->
+                <div class="form-group flex">
+                    <label for="suggestions">How can we improve ourselves?</label>
+                    <textarea name="suggestions" id="suggestions" cols="30" rows="10"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

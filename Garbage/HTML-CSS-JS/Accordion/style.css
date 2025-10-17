@@ -1,0 +1,104 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c46629;
+}
+
+/* Accordion container */
+.accordion {
+    color: #000;
+    background: #fff;
+    width: 25rem;
+    height: 2.8rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    overflow: hidden;
+    border-radius: 9px;
+    transition: all 0.3s;
+}
+
+.accordion:hover {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Accordion header */
+.accordionTop {
+    position: relative;
+    margin: 0.6rem 1rem;
+}
+
+.accordion h2 {
+    font-size: 1.2rem;
+}
+
+/* Plus/Minus icon */
+.accordionTop::after {
+    content: '+';
+    font-weight: bold;
+    font-size: 1.9rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Accordion content (collapsed by default) */
+.content {
+    height: 0;
+    padding: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+/* Hide horizontal rule by default */
+hr {
+    opacity: 0;
+}
+
+/* Accordion expanded state */
+.accordion.active {
+    height: auto;
+}
+
+.accordion.active hr {
+    opacity: 1;
+}
+
+.accordion.active .accordionTop::after {
+    content: '-';
+}
+
+.accordion.active .content {
+    height: auto;
+    transition: all 0.3s;
+}
+
+/* Paragraph styling */
+.para {
+    font-size: 15px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 420px) {
+    .accordion {
+        width: 90%;
+        margin: 0.6rem auto;
+    }
+
+    .accordionTop h2 {
+        font-size: 1.1rem;
+    }
+}

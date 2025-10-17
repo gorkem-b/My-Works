@@ -1,0 +1,62 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    background-color: #e65b00;
+}
+
+/* Header section */
+.header-section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Title styles */
+.title {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+/* Main image container */
+.main-image {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: rgb(160, 169, 169);
+}
+
+/* Main image styling */
+.main-image img {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 26px #e65c0073;
+}
+
+/* Bio section */
+.bio {
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    width: 40rem;
+}
+
+/* Bio heading */
+.bio-heading {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* Bio paragraph */
+.bio p {
+    font-size: 16px;
+    color: #dbd3d3;
+    line-height: 1.4rem;
+}

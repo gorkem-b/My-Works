@@ -1,0 +1,85 @@
+<!--
+    User Profile Card Component
+    
+    Description:
+    A responsive profile card displaying user information with social media statistics.
+    Features a minimalist design with navigation icons, profile image, user details,
+    and social media follower counts for Instagram, YouTube, and Twitter.
+    
+    Structure:
+    - Top navigation bar with back arrow, heart (favorite), and menu icons
+    - Circular user profile image
+    - User name and bio/about section
+    - "Hire Me" call-to-action button
+    - Social media statistics container with three platforms:
+        * Instagram - displays follower count
+        * YouTube - displays subscriber count
+        * Twitter - displays follower count
+    
+    Dependencies:
+    - Font Awesome 6.2.1 (CDN) - for icons
+    - style.css - custom styling
+    - script.js - interactive functionality
+    - user.png - profile image asset
+    
+    Author: Görkem Bozkaya
+    File Path: /C:/Users/Görkem/OneDrive/Belgeler/Profile Card/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> User Profile Card </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="cart-top-navigation">
+            <li>
+                <i class="fa-solid fa-arrow-left"></i>
+            </li>
+            <ul>
+                <i id="heart" class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-bars"></i>
+            </ul>
+        </div>
+        <div class="user-image">
+            <img src="user.png" alt="">
+        </div>
+        <h2 class="user-name">Görkem Bozkaya</h2>
+        <p class="about-user">I'm Görkem Bozkaya, a second year Computer Engineering student</p>
+        <button class="hire-me">Hire Me</button>
+
+        <div class="social-container">
+            <div class="social-item">
+                <li class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </li>
+                <span class="followers">257</span>
+                <span class="followers">Followers</span>
+            </div>
+            <div class="social-item">
+                <li class="youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </li>
+                <span class="subscribers">1477</span>
+                <span class="subscribers">Subscribers</span>
+            </div>
+            <div class="social-item">
+                <li class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </li>
+                <span class="followers">314</span>
+                <span class="followers">Followers</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
