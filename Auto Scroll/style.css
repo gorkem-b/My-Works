@@ -1,0 +1,60 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the scrolling list */
+.scroll {
+    margin: auto;
+    width: 1900px;
+    overflow: visible;
+}
+
+/* Horizontal scrolling list */
+.scroll ul {
+    padding: 0;
+    display: flex;
+    border-radius: 10px;
+    animation: scroll 50s linear infinite;
+}
+
+/* Pause animation on hover */
+.scroll ul:hover {
+    animation-play-state: paused;
+}
+
+/* List items styling */
+.scroll li {
+    margin: 0 10px;
+    list-style: none;
+    position: relative;
+    border-radius: 10px;
+}
+
+/* Image styling */
+.scroll img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
+    border-radius: 10px;
+    max-width: fit-content;
+}
+
+/* Slightly enlarge image on hover */
+.scroll img:hover {
+    transform: scale(1.04);
+}
+
+/* Keyframes for horizontal scrolling animation */
+@keyframes scroll {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: -100%;
+    }
+}
