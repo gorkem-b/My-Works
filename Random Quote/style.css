@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+/* Reset default browser styles and set base font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main container for the quote box */
+.quote-container {
+    width: 400px;
+    background-color: #e65b00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+/* Quote box title styling */
+.quote-container h2 {
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+/* Decorative underline for the title */
+.quote-container h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 30%;
+    height: 2px;
+    background: #ece3e3;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+/* Content area for the quote and author */
+.quote-content {
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Quote text styling */
+.quote {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Next quote button styling */
+#nextQuote {
+    border: none;
+    background-color: #fff;
+    color: #000;
+    padding: 6px 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 5px 5px 10px rgba(68, 64, 64, 0.53);
+}
